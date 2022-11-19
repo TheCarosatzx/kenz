@@ -196,7 +196,7 @@ user.afkReason = ''
 switch(command) {
 
 case 'canb': {
-haikal.sendMessage(m.chat, { text: '', templateButtons: [
+cann.sendMessage(m.chat, { text: '', templateButtons: [
 { callButton: { displayText: `p`, phoneNumber: ''}},
 { callButton: { displayText: `p`, phoneNumber: ''}},
 { urlButton: { displayText: `p`, url: 'https://wa.me/573177111111'}},
