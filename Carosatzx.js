@@ -379,7 +379,7 @@ cann.sendMessage(m.chat, { sticker: fs.readFileSync('./src/stick.webp'), templat
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
-},{ quoted: {
+]},{ quoted: {
 key: { 
 fromMe: true, 
 participant: `0@s.whatsapp.net`, 
