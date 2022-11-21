@@ -364,9 +364,6 @@ jumlah = `${encodeURI(q)}`
 cannx = `By Carosatzx`
 for (let i = 0; i < jumlah; i++) {
 cann.sendMessage(m.chat, { sticker: fs.readFileSync('./src/stick.webp'), templateButtons: [
-{ callButton: { displayText: ``, phoneNumber: '666'}},
-{ callButton: { displayText: ``, phoneNumber: '666'}},
-{ urlButton: { displayText: `TheCarosatzx`, url: '666'}},
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
 { quickReplyButton: { displayText: `${cannx}`, id: ''}},
