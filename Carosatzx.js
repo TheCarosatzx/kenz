@@ -435,16 +435,19 @@ cann.sendMessage(m.chat, { image: fs.readFileSync('./src/menu.jpg'), caption: `h
 }
 break
 /============================================/
-case 'Bugmenu': {
-cann.sendMessage(m.chat, { text: `─✪「𝗦𝗣𝗔𝗠𝗠𝗘𝗥」✪
+case 'bugmenu': {
+cann.sendMessage(m.chat, { text: `─✪「ALL MENU」✪
 │⧉ .stickpc [Jumlah]
 │⧉ .bungapc [Jumlah]
 │⧉ .santetstick [Nomor|Jumlah]
 │⧉ .santetbunga[Nomor|Jumlah]
-└─❶`,
-templateButtons: [
-{ urlButton: { displayText: `O W N E R`, url: 'https://wa.me/687995757'}},
-]})
+└─❶
+
+╭─✪「𝗔𝗕𝗢𝗨𝗧」✪
+│⧉ Create By KenZ
+│⧉ Version 3.0
+└─❷`,
+})
 }
 break
 
