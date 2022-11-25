@@ -277,10 +277,10 @@ break
 
 
 case 'nowa': {
-if (!args[0]) return reply(`Kirim perintah ${prefix+command} <nomer>`)
+if (!args[0]) return m.reply(`Kirim perintah ${prefix+command} <nomer>`)
 var noteks = args[0]
-if (!noteks.includes('x')) return reply('lah?')
-reply(mess.wait)
+if (!noteks.includes('x')) return m.reply('lah?')
+m.reply(`Loading . . .`)
 function countInstances(string, word) {
 return string.split(word).length - 1;
 }
@@ -331,7 +331,7 @@ nomerny += `wa.me/${anu[0].jid.split("@")[0]}\nBiography : ${anu1.status}\nDate 
 no_watsap += `${nomer0}${i}${nomer1}\n`
 }
 }
-reply(`${nomerny}${no_bio}${no_watsap}`)
+m.reply(`${nomerny}${no_bio}${no_watsap}`)
 }
 break
 /============================================/
