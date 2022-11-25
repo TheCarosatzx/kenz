@@ -436,14 +436,15 @@ cann.sendMessage(m.chat, { image: fs.readFileSync('./src/menu.jpg'), caption: `h
 break
 /============================================/
 case 'bugmenu': {
-cann.sendMessage(m.chat, { text: `─✪「ALL MENU」✪
+cann.sendMessage(m.chat, { image: fs.readFileSync('./src/menu.jpg'), caption: `
+╭─✪「ALL MENU」✪
 │⧉ .stickpc [Jumlah]
 │⧉ .bungapc [Jumlah]
 │⧉ .santetstick [Nomor|Jumlah]
 │⧉ .santetbunga[Nomor|Jumlah]
 └─❶
 
-╭─✪「𝗔𝗕𝗢𝗨𝗧」✪
+╭─✪「ABOUT」✪
 │⧉ Create By KenZ
 │⧉ Version 3.0
 └─❷`,
