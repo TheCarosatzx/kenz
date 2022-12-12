@@ -3,7 +3,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //_________ PREMIUM USER__________//
-global.premium = ["6287743875928","6289502991778"]
+global.premium = ["6287743875928","6289502991778","66898999999"]
 //__________________________________//
 global.owner = ["37122219115","6287743875928"]
 global.nameowner = "The Carosatzx",
