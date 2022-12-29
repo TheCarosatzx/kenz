@@ -140,7 +140,7 @@ else if (reason === DisconnectReason.connectionClosed) { console.log("Connection
 else if (reason === DisconnectReason.connectionLost) { console.log("Connection Lost from Server, reconnecting..."); startCann(); }
 else if (reason === DisconnectReason.connectionReplaced) { console.log("Connection Replaced, Another New Session Opened, Please Close Current Session First"); cann.logout(); }
 else if (reason === DisconnectReason.loggedOut) { console.log(`Device Logged Out, Please Scan Again And Run.`); cann.logout(); }
-else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startCanm(); }
+else if (reason === DisconnectReason.restartRequired) { console.log("Restart Required, Restarting..."); startCann(); }
 else if (reason === DisconnectReason.timedOut) { console.log("Connection TimedOut, Reconnecting..."); startCann(); }
 else cann.end(`Unknown DisconnectReason: ${reason}|${connection}`)}
 console.log('Connected...', update)})
